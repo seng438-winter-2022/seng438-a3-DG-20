@@ -9,20 +9,45 @@
 | Gurpartap Sohi               |     |
 | Liam Parmar               |     |
 
-(Note that some labs require individual reports while others require one report
-for each group. Please see each lab document for details.)
+<hr>
 
-# 1 Introduction
+**Table of Contents**
+
+[1 Introduction](#introduction)
+
+[2 Data-Flow Coverage Calculations for DataUtilities.calculateColumnTotal and Range.scale](#data-flow-coverage-calculations-for-datautilitiescalculatecolumntotal-and-rangescale)
+* [2.1 Methods of Which Coverage Will Be Calculated](#methods-of-which-coverage-will-be-calculated)
+* [2.2 Data Flow Graphs](#data-flow-graphs)
+* [2.3 Def-Use Sets Per Statement](#def-use-sets-per-statement)
+* [2.4 Def-Use Pairs Per Variable](#def-use-pairs-per-variable)
+* [2.5 Test Case Def-Use Pair Coverage Analysis](#test-case-def-use-pair-coverage-analysis)
+* [2.6 Def-Use Pair Coverage Calculation](#def-use-pair-coverage-calculation)
+
+[3 Test Cases Developed](#test-cases-developed)
+* [3.1 Range](#range)
+* [3.2 DataUtilities](#datautilities)
+
+[4 Division of Effort and Lessons Learned From Teamwork](#division-of-effort-and-lessons-learned-from-teamwork)
+
+[5 Difficulties Encountered, Challenges Overcome, and Lessons Learned](#difficulties-encountered-challenges-overcome-and-lessons-learned)
+
+[6 Comments and Feedback on The Lab Assignment](#comments-and-feedback-on-the-lab-assignment)
+
+<hr>
+
+# Introduction
 
 Text…
 
-# 2 Manual data-flow coverage calculations for X and Y methods
+<hr>
 
-## 2.1 Methods of Which Coverage Will Be Calculated
+# Data-Flow Coverage Calculations for DataUtilities.calculateColumnTotal and Range.scale
+
+## Methods of Which Coverage Will Be Calculated
 1. DataUtilities.calculateColumnTotal(Values2D data, int column)
 2. Range.scale(Range base, double factor)
 
-## 2.2 Data Flow Graphs
+## Data Flow Graphs
 
 ### DataUtilities.calculateColumnTotal
 
@@ -32,7 +57,7 @@ Text…
 
 ![Range](https://user-images.githubusercontent.com/58268240/156028404-079b91f8-7901-4baf-80ac-9bb45bf5fa24.png?style=centerme)
 
-## 2.3 Def-Use Sets Per Statement
+## Def-Use Sets Per Statement
 
 ### DataUtilities.calculateColumnTotal
 
@@ -72,7 +97,7 @@ Text…
 3. Def = {∅}, Use = {∅}
 4. Def = {∅}, Use = {factor,base}
 
-## 2.4 Def-Use Pairs Per Variable
+## Def-Use Pairs Per Variable
 
 (Using the DFGs from above)
 
@@ -90,10 +115,11 @@ column: Def = {∅}, Use = {7}
 base: Def = {∅}, Use = {1,5}
 factor: Def = {∅}, Use = {3,5}
 
-## 2.5 Test Case Def-Use Pair Coverage Analysis
+## Test Case Def-Use Pair Coverage Analysis
 
+## Def-Use Pair Coverage Calculation
 
-
+<hr>
 
 
 # 3 A detailed description of the testing strategy for the new unit test
