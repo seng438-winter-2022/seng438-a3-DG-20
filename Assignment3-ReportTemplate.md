@@ -62,40 +62,42 @@ Text…
 ### DataUtilities.calculateColumnTotal
 
 ```
-   public static double calculateColumnTotal(Values2D data, int column) {
-1. ParamChecks.nullNotPermitted(data, "data");
-2. double total = 0.0;
-3. int rowCount = data.getRowCount();
-4. for (int r = 0; r < rowCount; r++) {
-5. Number n = data.getValue(r, column);
-6. if (n != null) {
-7. total += n.doubleValue();}}
-8. return total;}
+1. public static double calculateColumnTotal(Values2D data, int column) {
+2. ParamChecks.nullNotPermitted(data, "data");
+3. double total = 0.0;
+4. int rowCount = data.getRowCount();
+5. for (int r = 0; r < rowCount; r++) {
+6. Number n = data.getValue(r, column);
+7. if (n != null) {
+8. total += n.doubleValue();}}
+9. return total;}
 ```
 
-1. Def = {∅}, Use = {data}
-2. Def = {total}, Use = {∅}
-3. Def = {rowcount}, Use = {data}
-4. Def = {r}, Use = {rowcount,r}
-5. Def = {n}, Use = {r,column}
-6. Def = {∅}, Use = {n}
-7. Def = {total}, Use = {n}
-8. Def = {∅}, Use = {total}
+1. Def = {data, column}, Use = {∅}
+2. Def = {∅}, Use = {data}
+3. Def = {total}, Use = {∅}
+4. Def = {rowcount}, Use = {data}
+5. Def = {r}, Use = {rowcount,r}
+6. Def = {n}, Use = {r,column}
+7. Def = {∅}, Use = {n}
+8. Def = {total}, Use = {n}
+9. Def = {∅}, Use = {total}
 
 ### Range.scale
 
 ```
-   public static Range scale(Range base, double factor) {
-1. ParamChecks.nullNotPermitted(base, "base");
-2. if (factor < 0) {
-3. throw new IllegalArgumentException("Negative 'factor' argument.");}
-4. return new Range(base.getLowerBound() * factor, base.getUpperBound() * factor);}
+1. public static Range scale(Range base, double factor) {
+2. ParamChecks.nullNotPermitted(base, "base");
+3. if (factor < 0) {
+4. throw new IllegalArgumentException("Negative 'factor' argument.");}
+5. return new Range(base.getLowerBound() * factor, base.getUpperBound() * factor);}
 ```
 
-1. Def = {∅}, Use = {base}
-2. Def = {∅}, Use = {factor}
-3. Def = {∅}, Use = {∅}
-4. Def = {∅}, Use = {factor,base}
+1. Def = {base, factor}, Use = {∅}
+2. Def = {∅}, Use = {base}
+3. Def = {∅}, Use = {factor}
+4. Def = {∅}, Use = {∅}
+5. Def = {∅}, Use = {factor,base}
 
 ## Def-Use Pairs Per Variable
 
@@ -103,98 +105,102 @@ Text…
 
 ### DataUtilities.calculateColumnTotal
 
-- data: Def = {∅}, Use = {1, 4, 7}
-- total: Def = {3,9}, Use = {9,11}
-- rowcount: Def = {4}, Use = {6}
-- r: Def = {5,10}, Use = {6,7,10}
-- n: Def = {7}, Use = {8,9}
-- column: Def = {∅}, Use = {7}
+- data: Def = {1}, Use = {2, 5, 8}
+- total: Def = {4,10}, Use = {10,12}
+- rowcount: Def = {5}, Use = {7}
+- r: Def = {6,11}, Use = {7,8,11}
+- n: Def = {8}, Use = {9,10}
+- column: Def = {1}, Use = {8}
 
 ### Range.scale
 
-- base: Def = {∅}, Use = {1,5}
-- factor: Def = {∅}, Use = {3,5}
+- base: Def = {1}, Use = {2,6}
+- factor: Def = {1}, Use = {4,6}
 
 ## Test Case Def-Use Pair Coverage Analysis
 
 ### DataUtilities.calculateColumnTotal
 
 Test Case Method: calculateColumnTotalForNullDataTest
-Def-Use Pairs Covered: 
-- data: Def = {∅}, Use = {1}
+Def-Use Pairs Covered: (1, 2).
+- data: Def = {1}, Use = {2}
 - total: Def = {∅}, Use = {∅}
 - rowcount: Def = {∅}, Use = {∅}
 - r: Def = {∅}, Use = {∅}
 - n: Def = {∅}, Use = {∅}
-- column: Def = {∅}, Use = {∅}
+- column: Def = {1}, Use = {∅}
 
 Test Case Method: calculateColumnTotalValidDataRealTest
-Def-Use Pairs Covered: 
-- data: Def = {∅}, Use = {1, 4, 7}
-- total: Def = {3,9}, Use = {9,11}
-- rowcount: Def = {4}, Use = {6}
-- r: Def = {5,10}, Use = {6,7,10}
-- n: Def = {7}, Use = {8,9}
-- column: Def = {∅}, Use = {7}
+Def-Use Pairs Covered: (1, 2), (1, 5), (1, 8), (4, 10), (10, 10), (10, 12), (5, 7), (6, 7), (6, 8), (6, 11), (11, 7), (11, 8), (11, 11), (8, 9), (8, 10), (1, 8).
+- data: Def = {1}, Use = {2, 5, 8}
+- total: Def = {4,10}, Use = {10,12}
+- rowcount: Def = {5}, Use = {7}
+- r: Def = {6,11}, Use = {7,8,11}
+- n: Def = {8}, Use = {9,10}
+- column: Def = {1}, Use = {8}
 
 Test Case Method: calculateColumnTotalValidDataExtraTest
-Def-Use Pairs Covered: 
-- data: Def = {∅}, Use = {1, 4, 7}
-- total: Def = {3,9}, Use = {9,11}
-- rowcount: Def = {4}, Use = {6}
-- r: Def = {5,10}, Use = {6,7,10}
-- n: Def = {7}, Use = {8,9}
-- column: Def = {∅}, Use = {7}
+Def-Use Pairs Covered: (1, 2), (1, 5), (1, 8), (4, 10), (10, 10), (10, 12), (5, 7), (6, 7), (6, 8), (6, 11), (11, 7), (11, 8), (11, 11), (8, 9), (8, 10), (1, 8).
+- data: Def = {1}, Use = {2, 5, 8}
+- total: Def = {4,10}, Use = {10,12}
+- rowcount: Def = {5}, Use = {7}
+- r: Def = {6,11}, Use = {7,8,11}
+- n: Def = {8}, Use = {9,10}
+- column: Def = {1}, Use = {8}
 
 Test Case Method: calculateColumnTotalUnderAcceptableColTest
-Def-Use Pairs Covered: 
-- data: Def = {∅}, Use = {1, 4}
-- total: Def = {3}, Use = {∅}
-- rowcount: Def = {4}, Use = {6}
-- r: Def = {5}, Use = {6}
+Def-Use Pairs Covered: (1, 2), (1, 5), (5, 7), (6, 7).
+- data: Def = {1}, Use = {2, 5}
+- total: Def = {4}, Use = {∅}
+- rowcount: Def = {5}, Use = {7}
+- r: Def = {6}, Use = {7}
 - n: Def = {∅}, Use = {∅}
-- column: Def = {∅}, Use = {∅}
+- column: Def = {1}, Use = {∅}
 
 Test Case Method: calculateColumnTotalOverAcceptableColTest
-Def-Use Pairs Covered: 
-- data: Def = {∅}, Use = {1, 4}
-- total: Def = {3}, Use = {∅}
-- rowcount: Def = {4}, Use = {6}
-- r: Def = {5}, Use = {6}
+Def-Use Pairs Covered: (1, 2), (1, 5), (5, 7), (6, 7).
+- data: Def = {1}, Use = {2, 5}
+- total: Def = {4}, Use = {∅}
+- rowcount: Def = {5}, Use = {7}
+- r: Def = {6}, Use = {7}
 - n: Def = {∅}, Use = {∅}
-- column: Def = {∅}, Use = {∅}
+- column: Def = {1}, Use = {∅}
 
 Test Case Method: calculateColumnTotalBoundaryTest
-Def-Use Pairs Covered: 
-- data: Def = {∅}, Use = {1, 4, 7}
-- total: Def = {3,9}, Use = {9,11}
-- rowcount: Def = {4}, Use = {6}
-- r: Def = {5,10}, Use = {6,7,10}
-- n: Def = {7}, Use = {8,9}
-- column: Def = {∅}, Use = {7}
-
+Def-Use Pairs Covered: (1, 2), (1, 5), (1, 8), (4, 10), (10, 10), (10, 12), (5, 7), (6, 7), (6, 8), (6, 11), (11, 7), (11, 8), (11, 11), (8, 9), (8, 10), (1, 8).
+- data: Def = {1}, Use = {2, 5, 8}
+- total: Def = {4,10}, Use = {10,12}
+- rowcount: Def = {5}, Use = {7}
+- r: Def = {6,11}, Use = {7,8,11}
+- n: Def = {8}, Use = {9,10}
+- column: Def = {1}, Use = {8}
 
 ### Range.scale
 
 Test Case Method: scaleNullRangeNegativeFactorTest
-- base: Def = {∅}, Use = {1}
-- factor: Def = {∅}, Use = {∅}
+Def-Use Pairs Covered: (1, 2).
+- base: Def = {1}, Use = {2}
+- factor: Def = {1}, Use = {∅}
 
 Test Case Method: scaleValidRangeNegativeFactorTest
-- base: Def = {∅}, Use = {1}
-- factor: Def = {∅}, Use = {3}
+Def-Use Pairs Covered: (1, 2), (1, 4).
+- base: Def = {1}, Use = {2}
+- factor: Def = {1}, Use = {4}
 
 Test Case Method: scaleNullRangeValidFactorTest
-- base: Def = {∅}, Use = {1}
-- factor: Def = {∅}, Use = {∅}
+Def-Use Pairs Covered: (1, 2).
+- base: Def = {1}, Use = {2}
+- factor: Def = {1}, Use = {∅}
 
 Test Case Method: scaleValidRangeValidFactorTest
-- base: Def = {∅}, Use = {1,5}
-- factor: Def = {∅}, Use = {3,5}
+Def-Use Pairs Covered: (1, 2), (1, 5), (1, 4), (1, 6).
+- base: Def = {1}, Use = {2,5}
+- factor: Def = {1}, Use = {4,6}
 
 Test Case Method: scaleFactorZeroTest
-- base: Def = {∅}, Use = {1,5}
-- factor: Def = {∅}, Use = {3,5}
+Def-Use Pairs Covered: (1, 2), (1, 5), (1, 4), (1, 6).
+- base: Def = {1}, Use = {2,5}
+- factor: Def = {1}, Use = {4,6}
 
 ## Def-Use Pair Coverage Calculation
 
