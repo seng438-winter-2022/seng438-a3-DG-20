@@ -117,7 +117,89 @@ Text…
 
 ## Test Case Def-Use Pair Coverage Analysis
 
+### DataUtilities.calculateColumnTotal
+
+Test Case Method: calculateColumnTotalForNullDataTest
+Def-Use Pairs Covered: 
+- data: Def = {∅}, Use = {1}
+- total: Def = {∅}, Use = {∅}
+- rowcount: Def = {∅}, Use = {∅}
+- r: Def = {∅}, Use = {∅}
+- n: Def = {∅}, Use = {∅}
+- column: Def = {∅}, Use = {∅}
+
+Test Case Method: calculateColumnTotalValidDataRealTest
+Def-Use Pairs Covered: 
+- data: Def = {∅}, Use = {1, 4, 7}
+- total: Def = {3,9}, Use = {9,11}
+- rowcount: Def = {4}, Use = {6}
+- r: Def = {5,10}, Use = {6,7,10}
+- n: Def = {7}, Use = {8,9}
+- column: Def = {∅}, Use = {7}
+
+Test Case Method: calculateColumnTotalValidDataExtraTest
+Def-Use Pairs Covered: 
+- data: Def = {∅}, Use = {1, 4, 7}
+- total: Def = {3,9}, Use = {9,11}
+- rowcount: Def = {4}, Use = {6}
+- r: Def = {5,10}, Use = {6,7,10}
+- n: Def = {7}, Use = {8,9}
+- column: Def = {∅}, Use = {7}
+
+Test Case Method: calculateColumnTotalUnderAcceptableColTest
+Def-Use Pairs Covered: 
+- data: Def = {∅}, Use = {1, 4}
+- total: Def = {3}, Use = {∅}
+- rowcount: Def = {4}, Use = {6}
+- r: Def = {5}, Use = {6}
+- n: Def = {∅}, Use = {∅}
+- column: Def = {∅}, Use = {∅}
+
+Test Case Method: calculateColumnTotalOverAcceptableColTest
+Def-Use Pairs Covered: 
+- data: Def = {∅}, Use = {1, 4}
+- total: Def = {3}, Use = {∅}
+- rowcount: Def = {4}, Use = {6}
+- r: Def = {5}, Use = {6}
+- n: Def = {∅}, Use = {∅}
+- column: Def = {∅}, Use = {∅}
+
+Test Case Method: calculateColumnTotalBoundaryTest
+Def-Use Pairs Covered: 
+- data: Def = {∅}, Use = {1, 4, 7}
+- total: Def = {3,9}, Use = {9,11}
+- rowcount: Def = {4}, Use = {6}
+- r: Def = {5,10}, Use = {6,7,10}
+- n: Def = {7}, Use = {8,9}
+- column: Def = {∅}, Use = {7}
+
+
+### Range.scale
+
+Test Case Method: scaleNullRangeNegativeFactorTest
+- base: Def = {∅}, Use = {1}
+- factor: Def = {∅}, Use = {∅}
+
+Test Case Method: scaleValidRangeNegativeFactorTest
+- base: Def = {∅}, Use = {1}
+- factor: Def = {∅}, Use = {3}
+
+Test Case Method: scaleNullRangeValidFactorTest
+- base: Def = {∅}, Use = {1}
+- factor: Def = {∅}, Use = {∅}
+
+Test Case Method: scaleValidRangeValidFactorTest
+- base: Def = {∅}, Use = {1,5}
+- factor: Def = {∅}, Use = {3,5}
+
+Test Case Method: scaleFactorZeroTest
+- base: Def = {∅}, Use = {1,5}
+- factor: Def = {∅}, Use = {3,5}
+
 ## Def-Use Pair Coverage Calculation
+
+
+
 
 <hr>
 
