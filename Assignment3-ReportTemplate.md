@@ -55,7 +55,8 @@ Text…
 
 ### Range.scale
 
-![Range](https://user-images.githubusercontent.com/58268240/156028404-079b91f8-7901-4baf-80ac-9bb45bf5fa24.png?style=centerme)
+![Untitled Diagram (1)](https://user-images.githubusercontent.com/58268240/156315949-8e2b2654-8f61-4598-91c8-efe98e44487d.png?style=centerme)
+
 
 ## Def-Use Sets Per Statement
 
