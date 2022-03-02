@@ -37,7 +37,6 @@
 
 # Introduction
 
-Text…
 
 <hr>
 
@@ -229,39 +228,59 @@ Def-Use Pairs Covered: (1, 2), (1, 5), (1, 4), (1, 6).
 | factor   | 1            | {6} | {(4, 5), (4, 6)} |
 | total    |              | 2   | 4                |
 
+<hr>
+
+# 3 Detailed Description of Testing Strategy
+
+## Roles
+
+
+
+## Testing Strategy
+
+<hr>
+
+# 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
 
 
 <hr>
 
-
-# 3 A detailed description of the testing strategy for the new unit test
-
-Text…
-
-# 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
-
-Text…
-
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
-Text…
+## DataUtilites
+
+## Range
+
+<hr>
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
-Text…
+## Pros
+
+## Cons
+
+<hr>
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
-Text…
+## Advantages
+
+## Disadvantages
+
+<hr>
 
 # 8 A discussion on how the team work/effort was divided and managed
 
 Text…
 
+<hr>
+
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
 Text…
+
+<hr>
 
 # 10 Comments/feedback on the lab itself
 
