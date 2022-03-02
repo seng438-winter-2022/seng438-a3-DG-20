@@ -250,7 +250,19 @@ Def-Use Pairs Covered: (1, 2), (1, 5), (1, 4), (1, 6).
 
 ## DataUtilites
 
+|           | Coverage | Covered | Missed | Total |
+| --------- | -------- | ------- | ------ | ----- |
+| Statement | 100%     | 80      | 0      | 80    |
+| Branches  | 89.6%    | 43      | 5      | 48    |
+| Methods   | 100%     | 10      | 0      | 10    |
+
 ## Range
+
+|           | Coverage | Covered | Missed | Total |
+| --------- | -------- | ------- | ------ | ----- |
+| Statement | 92.2%    | 95      | 8      | 103   |
+| Branches  | 79.2%    | 57      | 15     | 72    |
+| Methods   | 100%     | 23      | 0      | 23    |
 
 <hr>
 
