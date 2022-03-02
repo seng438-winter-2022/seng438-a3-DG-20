@@ -103,17 +103,17 @@ Text…
 
 ### DataUtilities.calculateColumnTotal
 
-data: Def = {∅}, Use = {1, 4, 7}
-total: Def = {3,9}, Use = {9,11}
-rowcount: Def = {4}, Use = {6}
-r: Def = {5,10}, Use = {6,7,10}
-n: Def = {7}, Use = {8,9}
-column: Def = {∅}, Use = {7}
+- data: Def = {∅}, Use = {1, 4, 7}
+- total: Def = {3,9}, Use = {9,11}
+- rowcount: Def = {4}, Use = {6}
+- r: Def = {5,10}, Use = {6,7,10}
+- n: Def = {7}, Use = {8,9}
+- column: Def = {∅}, Use = {7}
 
 ### Range.scale
 
-base: Def = {∅}, Use = {1,5}
-factor: Def = {∅}, Use = {3,5}
+- base: Def = {∅}, Use = {1,5}
+- factor: Def = {∅}, Use = {3,5}
 
 ## Test Case Def-Use Pair Coverage Analysis
 
