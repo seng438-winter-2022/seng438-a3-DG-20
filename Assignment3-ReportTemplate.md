@@ -205,6 +205,30 @@ Def-Use Pairs Covered: (1, 2), (1, 5), (1, 4), (1, 6).
 
 ## Def-Use Pair Coverage Calculation
 
+### DCU and DPU Tables
+
+#### DataUtilities.calculateColumnTotal
+
+| Variable | Node Defined | DCU      | DPU                |
+| -------- | ------------ | -------- | ------------------ |
+| data     | 1            | {5, 8}   | {(2, 3), (2, 4)}   |
+| column   | 1            | {8}      | { }                |
+| total    | 4            | {10, 12} | { }                |
+| total    | 10           | {10, 12} | { }                |
+| rowCount | 5            | { }      | {(7, 8), (7, 12)}  |
+| r        | 6            | {8, 11}  | {(7, 8), (7, 12)}  |
+| r        | 11           | {8, 11}  | {(7, 8), (7, 12)}  |
+| n        | 8            | {10}     | {(9, 10), (9, 11)} |
+| total    |              | 12       | 10                 |
+
+### Range.scale
+
+| Variable | Node Defined | DCU | DPU              |
+| -------- | ------------ | --- | ---------------- |
+| base     | 1            | {6} | {(2, 3), (2, 4)} |
+| factor   | 1            | {6} | {(4, 5), (4, 6)} |
+| total    |              | 2   | 4                |
+
 
 
 
