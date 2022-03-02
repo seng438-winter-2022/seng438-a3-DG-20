@@ -51,7 +51,7 @@ Text…
 
 ### DataUtilities.calculateColumnTotal
 
-![DataUtilities](https://user-images.githubusercontent.com/58268240/156028338-542d9018-4a2e-47b0-925a-b491df863053.png?style=centerme)
+![Untitled Diagram](https://user-images.githubusercontent.com/58268240/156315675-64417059-c2d7-42a5-9cdd-eabc2b5be21c.png?style=centerme)
 
 ### Range.scale
 
