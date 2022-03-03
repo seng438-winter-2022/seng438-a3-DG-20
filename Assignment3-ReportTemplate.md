@@ -282,30 +282,41 @@ After each group achieves a minimum line coverage of 90%, they will check the br
 
 ## Pros
 
-## Cons
+- EclEmma is already implemented in Eclipse
+- EclEmma can run many coverage types such as Line, Branch,
+- EclEmma is an established and respected coverage tool with it being one of the most popular
+- Helps identifies parts of the code that are not tested per metric by highlighting lines red and green
 
+## Cons
+- EclEmma is outdated and isn't managed actively anymore
 <hr>
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
 ## Advantages
+The advantages of requirements-based test generation ensures that the software code does what its supposed to do. Ensures the testing of the code meets the expectations of outputs and expected results defined in the requirements meaning the correctness of certain functionalities is ensured. Requirements based testing is also a popular strategy and tool in popular software development life cycle patterns such as Agile. Requirements based testing has the advantage of also being well-defined and time-boxed meaning testing can be easier to plan due to clear requirements in the system. 
+
+The advantages of coverage-based test generation is that it ensures 100% coverage of all requirements of the system due to the emphasis on covering all areas of the code. This type of testing also helps to extend the testing of software to areas of code that may have gone untested, thus increasing the quality of the software.
 
 ## Disadvantages
+The disadvantages of requirements-based testing can be the missing of important parts of software quality. For instance, requirements may be too brief and can cause key parts of the software to go uncaptured and or not specific enough.
+
+A disadvantage of coverage-based test generation is that no apparent strategy in the structure of the testing can lead to time wasted or long periods of time dedicated to testing less important areas of code to ensure 100% coverage. The quality of tests can also be lower since the lack of structure as to the plan when testing can lead to less "effective" tests.
 
 <hr>
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-Text…
+The team work was done as a group of 4 with all group members participating in the idenifying of methods of the code that needed to be tested to increase coverage. Group members took part in the writing of new test cases to increase branch, line, and method coverage of the tests on the classes DataUtilities and Range. The general formatting of the test cases were thought of as a group along with the splitting of each test into general partitions. The lessons learned from the teamwork in this lab were the importance of having an organized approach to developing test cases to be more efficient as a group. Furthermore, this lab allowed us to utilize peer programming in an efficient way, partnered with simultaneous group programming to complete the coding in the least amount of time possible.
 
 <hr>
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-Text…
+Difficulties encountered in this lab were the clarity in some of the DU-Pair calculations as well as the use of EclEmma and it being the first test code coverage tool any group member had used before. The discovery of the different coverage options such as line, branch, and method took a while to figure out through the use of the tool and help of TA's.  The creation of DU-pairs and data flow graphs required a lot of correcting and backtracking to ensure we had the correct structure. One of the challenges that the group encountered was when implementing the test cases into JUnit methods, only one member could code at a time to avoid conflicts in GitHub. To overcome this, the group decided to use Replit which allowed all members of the group to simultaneously code, increasing productivity significantly. Another challenge that the group encountered was the creation of too many test cases per method, which would lead to duplicate test domains. The way the group overcame the challenge was by going through all of the test cases that were created on paper, and deciding which ones were redundant and thus should be discarded after discussing possible duplicates. Through this assignment, the group learned the specifics of coverage-based testing techniques and applying the terminology associated with it. Furthermore, this assignment served to further familiarize the group members with JUnit testing and good approaches to take when developing tests, such as splitting them up by coverage specific tests such as branch coverage. Branch coverage was exspecially tricky as each if statement or boolean return value had to be covered going every way possible to ensure allb ranches were included to reach the 70% requirement.
 
 <hr>
 
 # 10 Comments/feedback on the lab itself
 
-Text…
+This lab allowed us to better understand how to create unit tests, perform JUnit testing, and work with coverage-based testing techniques in a collaborative environment. Overall, it taught us how to work effectively as a team and use each other's strengths to achieve a common goal. A suggestion for the future would be to provide a brief explanation of how to use EclEmma at the minimum and the selecting of different coverage type tests for the asked for coverage types.
