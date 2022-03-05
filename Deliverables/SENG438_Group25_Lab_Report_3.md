@@ -47,8 +47,7 @@
 <hr>
 
 # Introduction
-
-
+This assignment intends to provide students a generalized overview of the fundamentals of coverage-based unit test generation. In order to meet a specific coverage requirement for each of the three metrics: statement, branch, method, students are required to devise a high level plan to meet these requirements for the Range and DataUtilities classes. This includes devising new test cases strategically and documenting them as well as the results of the coverage generated after implementing these new test cases. Students will gain experience working with coverage tools such as EclEmma within Eclipse.
 
 <hr>
 
@@ -272,7 +271,59 @@ Finally, after each pair has completed developing test cases for their assigned 
 
 # High Level Description of Five Selected Test Cases and Their Contribution to Coverage
 
+## DataUtilities
 
+### createNumberArray2DTest
+
+#### Description
+This method tests the createNumberArray2D method within DataUtilities. It passes in a 2D double array which contains double values. The expected return value is a 2D Number array which has the same numbers as the original 2D array that was passed in.
+
+#### Coverage Improvement
+* Statement: This test case covered lines 242 to 248 in DataUtilities.java. These lines were not previously covered in any test case, thus improving the statement coverage.
+* Branch: This test case has 2 possible branches in the for loop on line 245 in DataUtilities.java. This test case covers both branches due to the for loop running twice, thus improving the branch coverage.
+* Method: This test case covers a method that was not previously covered by a test case, thus improving the method coverage.
+
+### calculateRowTotal2ValidDataRealTest
+
+#### Description
+This method tests the calculateRowTotal method within DataUtilities. It passes in a Values2D mock object, the row over which to calculate the sum, and an array of the valid columns over which to use to calculate the sum. The expected return value is a double which is the total summation of the specified row and columns.
+
+#### Coverage Improvement
+* Statement: This test case covered lines 201 to 213 in DataUtilities.java. These lines were not previously covered in any test case, thus improving the statement coverage.
+* Branch: This test case covers the branches where col is less than colCount, n is not null, and the 2 branches of the for loop, which are 4 of the 6 possible branches that were not covered in any other test case, thus improving the branch coverage.
+* Method: This test case covers a method that was not previously covered by a test case, thus improving the method coverage.
+
+### calculateRowTotalValidAboveRowCountTest
+
+#### Description
+This method tests the calculateRowTotal method within DataUtilities. It passes in a Values2D mock object, the row over which to calculate the sum, and an array of the columns over which to use to calculate the sum (where one of the columns specified is greater than the defined columns in the Values2D mock object). The expected return value is a double which is the total summation of the specified row and columns.
+
+#### Coverage Improvement
+* Statement: This test case covered lines 201 to 213 in DataUtilities.java. These lines were not previously covered in any test case, thus improving the statement coverage.
+* Branch: This test case covers the branches where one col is less than colCount, another col is also greater than colCount, n is not null, and the 2 branches of the for loop, which are 5 of the 6 possible branches that covers an extra branch that was not covered in any other test case, thus improving the branch coverage.
+* Method: This test case does not improve the method coverage due to the test case mentioned previously.
+
+## Range
+
+### hashCodeValidTest
+
+#### Description
+This method tests the hashCode method within Range.java. This method has no arguments. The expected return value is a double which is hash code of the Range object.
+
+#### Coverage Improvement
+* Statement: This test case covered lines 458 to 464 in Range.java. These lines were not previously covered in any test case, thus improving the statement coverage.
+* Branch: This test case does not improve the branch coverage due to no branches being present within the method.
+* Method: This test case covers a method that was not previously covered by a test case, thus improving the method coverage.
+
+### constructorLowerAboveUpper
+
+#### Description
+This method tests the Range constructor method within Range.java. This method takes in 2 doubles, a lower and upper bound. This test was created with the goal of testing invalid arguments for the constructor.
+
+#### Coverage Improvement
+* Statement: This test case covered lines 90 to 93 in Range.java. These lines were not previously covered in any test case, thus improving the statement coverage.
+* Branch: This test case covers the branch where lower is greater than upper. This branch was not previously covered in any other test case, thus improving branch coverage.
+* Method: This test case does not improve the method coverage.
 
 <hr>
 
