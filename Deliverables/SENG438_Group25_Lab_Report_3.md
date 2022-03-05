@@ -31,8 +31,8 @@
 * [4.2 Range](#range)
 
 [5 New Coverage Achieved with Further Test Cases Added](#new-coverage-achieved-with-further-test-cases-added)
-* [5.1 DataUtilites](#datautilites)
-* [5.2 Range](#range)
+* [5.1 DataUtilities](#datautilities-1)
+* [5.2 Range](#range-1)
 
 [6 Pros and Cons of EclEmma](#pros-and-cons-of-eclEmma)
 * [6.1 Pros](#pros)
@@ -331,7 +331,7 @@ This method tests the Range constructor method within Range.java. This method ta
 
 # New Coverage Achieved with Further Test Cases Added
 
-## DataUtilites
+## DataUtilities
 
 |           | Coverage | Covered | Missed | Total |
 | --------- | -------- | ------- | ------ | ----- |
