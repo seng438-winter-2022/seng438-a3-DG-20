@@ -675,6 +675,8 @@ public class DataUtilitiesTest extends DataUtilities {
 	 public void createNumberArray2DTest()
 	 {
 	   Number [][] returnVal = DataUtilities.createNumberArray2D(create2D);
+	   Number [][] expectedVal = new Number[][] {{Double.valueOf(0), Double.valueOf(1), Double.valueOf(2)}, {Double.valueOf(4), Double.valueOf(5), Double.valueOf(6)}};
+	   assertArrayEquals(expectedVal, returnVal);
 	 }
   
   //Tear-down is not needed for these tests.
