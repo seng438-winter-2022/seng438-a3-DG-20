@@ -27,6 +27,8 @@
 * [3.1 Testing Strategy](#testing-strategy)
 
 [4 High Level Description of Five Selected Test Cases and Their Contribution to Coverage](#high-level-description-of-five-selected-test-cases-and-their-contribution-to-coverage)
+* [4.1 DataUtilities](#datautilities)
+* [4.2 Range](#range)
 
 [5 New Coverage Achieved with Further Test Cases Added](#new-coverage-achieved-with-further-test-cases-added)
 * [5.1 DataUtilites](#datautilites)
