@@ -23,15 +23,26 @@
 * [2.5 Test Case Def-Use Pair Coverage Analysis](#test-case-def-use-pair-coverage-analysis)
 * [2.6 Def-Use Pair Coverage Calculation](#def-use-pair-coverage-calculation)
 
-[3 Test Cases Developed](#test-cases-developed)
-* [3.1 Range](#range)
-* [3.2 DataUtilities](#datautilities)
+[3 Detailed Description of Testing Strategy](#detailed-description-of-testing-strategy)
+* [3.1 Testing Strategy](#testing-strategy)
 
-[4 Division of Effort and Lessons Learned From Teamwork](#division-of-effort-and-lessons-learned-from-teamwork)
+[4 High Level Description of Five Selected Test Cases and Their Contribution to Coverage](#high-level-description-of-five-selected-test-cases-and-their-contribution-to-coverage)
 
-[5 Difficulties Encountered, Challenges Overcome, and Lessons Learned](#difficulties-encountered-challenges-overcome-and-lessons-learned)
+[5 New Coverage Achieved with Further Test Cases Added](#new-coverage-achieved-with-further-test-cases-added)
+* [5.1 DataUtilites](#datautilites)
+* [5.2 Range](#range)
 
-[6 Comments and Feedback on The Lab Assignment](#comments-and-feedback-on-the-lab-assignment)
+[6 Pros and Cons of EclEmma](#pros-and-cons-of-eclEmma)
+* [6.1 Pros](#pros)
+* [6.2 Cons](#cons)
+
+[7 Advantages and Disadvantages of Requirements-Based Test Generation and Coverage-Based Test Generation](#advantages-and-disadvantages-of-requirements-based-test-generation-and-coverage-based-test-generation)
+
+[8 How Work was Divided/Shared](#how-work-was-dividedshared)
+
+[9 Difficulties Encountered, Challenges Overcame, and Lessons Learned](#difficulties-encountered-challenges-overcame-and-lessons-learned)
+
+[10 Comments/Feedback](#commentsfeedback)
 
 <hr>
 
@@ -229,7 +240,7 @@ The test cases called scaleValidRangeValidFactorTest and scaleFactorZeroTest uti
 | n        | 8            | {10}     | {(9, 10), (9, 11)} |
 | total    |              | 12       | 10                 |
 
-### Range.scale
+#### Range.scale
 
 | Variable | Node Defined | DCU | DPU              |
 | -------- | ------------ | --- | ---------------- |
@@ -239,11 +250,7 @@ The test cases called scaleValidRangeValidFactorTest and scaleFactorZeroTest uti
 
 <hr>
 
-# 3 Detailed Description of Testing Strategy
-
-## Roles
-
-
+# Detailed Description of Testing Strategy
 
 ## Testing Strategy
 
@@ -263,7 +270,7 @@ Finally, after each pair has completed developing test cases for their assigned 
 
 <hr>
 
-# 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
+# High Level Description of Five Selected Test Cases and Their Contribution to Coverage
 
 
 
@@ -357,6 +364,6 @@ Difficulties encountered in this lab were the clarity in some of the DU-Pair cal
 
 <hr>
 
-# 10 Comments/Feedback
+# Comments/Feedback
 
 This lab allowed us to better understand how to create unit tests, perform JUnit testing, and work with coverage-based testing techniques in a collaborative environment. Overall, it taught us how to work effectively as a team and use each other's strengths to achieve a common goal. A suggestion for the future would be to provide a brief explanation of how to use EclEmma at the minimum and the selecting of different coverage type tests for the asked for coverage types.
