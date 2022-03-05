@@ -38,6 +38,7 @@
 # Introduction
 
 
+
 <hr>
 
 # Data-Flow Coverage Calculations for DataUtilities.calculateColumnTotal and Range.scale
@@ -203,6 +204,14 @@ Def-Use Pairs Covered: (1, 2), (1, 5), (1, 4), (1, 6).
 - factor: Def = {1}, Use = {4,6}
 
 ## Def-Use Pair Coverage Calculation
+
+### DataUtilities.calculateColumnTotal
+
+The test cases called calculateColumnTotalValidDataRealTest, calculateColumnTotalValidDataExtraTest, calculateColumnTotalBoundaryTest utilize all 16 possible def-use pairs (listed above) within the function. As such, the Def-Use Pair Coverage is 100% for the developed test cases.
+
+### Range.scale
+
+The test cases called scaleValidRangeValidFactorTest and scaleFactorZeroTest utilize all four possible def-use pairs (listed above) within the function. As such, the Def-Use Pair Coverage is 100% for the developed test cases.
 
 ### DCU and DPU Tables
 
