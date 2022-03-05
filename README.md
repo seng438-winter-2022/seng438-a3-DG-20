@@ -7,5 +7,5 @@
 ## To Run:
 - Download and extract [Assignment_Artifacts.zip](https://github.com/seng438-winter-2022/seng438-a3-DG-20/blob/main/Assignment_Artifacts.zip).
 - Create new Java Project in Eclipse following same steps as outlined in the lab document, "Add External JARs" from the extracted Assignment_Artifacts folder under jfreechart-1.0.19/jfreechart-1.0.19/lib.
-- Add the [org/jfree/data](https://github.com/seng438-winter-2022/seng438-a3-DG-20/tree/main/org/jfree/data) folder into the src folder.
+- Add the [org/jfree/data](https://github.com/seng438-winter-2022/seng438-a3-DG-20/tree/main/org/jfree/data) files (RangeTest.java and DataUtilitiesTest.java) into the org.jfree.data package.
 - Click "Coverage As"-->"JUnit Test"
